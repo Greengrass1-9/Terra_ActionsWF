@@ -5,7 +5,8 @@ jobs:
   first-job: # custom name - anything you want
     runs-on: ubuntu-latest
     steps:
-      - name: hello
-        run: echo "Hello World"
-      - name: how_are_you
+      name: hello
+      run: |
+        echo "Hello World"
+        how_are_you
         run: echo "How are you?"
